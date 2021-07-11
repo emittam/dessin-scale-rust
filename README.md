@@ -12,7 +12,7 @@ wget https://github.com/emittam/dessin-scale-rust/raw/master/dessin-scale
 wget https://raw.githubusercontent.com/emittam/dessin-scale-rust/master/dessin-scale.asc
 gpg --verify dessin-scale.asc
 sudo mv dessin-scale /usr/local/bin
-sudo chmod 755 dessin-scale
+sudo chmod 755 /usr/local/bin/dessin-scale
 rm dessin-scale.asc
 ```
 
