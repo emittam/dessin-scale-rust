@@ -96,7 +96,7 @@ fn main() -> Result<()> {
     image = draw_grid(image, opt.grid_size, opt.scale, opt.transparent)?;
 
     image.save(get_save_file_path(&opt.file_path, &opt.output_path)?)
-    .expect("ファイル保存に失敗しました");
+    .context("ファイル保存に失敗しました")?;
 
     return Ok(());
 }
